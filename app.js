@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((data) => {
         if (data.success) {
           // Redirect to the specified URL
-          window.location.href = "login.html";
+          window.location.href = "index.html";
         } else {
           // Handle registration failure if needed
           console.error("Registration failed");

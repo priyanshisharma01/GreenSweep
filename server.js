@@ -92,7 +92,7 @@ app.post("/register", async (req, res) => {
   
       await newUser.save();
   
-      res.json({ success: true, redirect: "/login.html" });
+      res.json({ success: true, redirect: "/index.html" });
     } catch (error) {
       console.error(error);
       res.status(500).json({ error: "Internal Server Error" });
@@ -244,14 +244,14 @@ app.get("/app.js", (req, res) => {
 app.get("/register.html", (req, res) => {
   res.sendFile(path.join(__dirname, "register.html"));
 });
-app.get("/login.html", (req, res) => {
-  res.sendFile(path.join(__dirname, "login.html"));
+app.get("/index.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 app.get("/index.html", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "login.html"));
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.get("/map.html", (req, res) => {
