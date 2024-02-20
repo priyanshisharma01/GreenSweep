@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+    <title>Portfolio | Ludiflex</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">GreenSweep</p>
+                <!-- <span>.</span> -->
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Events</a>
+                        <div class="circle"></div>
+                    </li>
+                   
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Report</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#map" class="nav-link">Map</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn">Community <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <h1 class="grays">Welcome! <span id="username"></span></h1>
+                    <h1 class="grays">Total Points Earned: <span id="points"></span></h2>
+                   
+
+
+
+                    <div class="featured-text-info">
+                        <p>Earn Points, Make a Difference: Participate More, Clean More, Build a Better World!
+                        </p>
+                    </div>
+
+                    <div class="social_icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon"><i class="uil uil-dribbble"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="plant.jpg" alt="avatar">
+                    </div>
+                </div>
+                <div class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scroll Down</p>
+                    </a>
+                </div>
+
+            </section>
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <p class="large rise">About GreenSweep</p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>Introduction</h3>
+                            <p>Welcome to GreenSweep – the next-generation solution for urban waste management. Overflowing bins and littered streets are no longer acceptable in our cities. GreenSweep empowers citizens, optimizes cleaning routes, and incentivizes eco-friendly actions to create cleaner, healthier environments. Join us in revolutionizing waste management with GreenSweep.
+                            </p>
+                            <!-- <div class="about-btn">
+                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                    </div> -->
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>How it helps</h3>
+                            <p>GreenSweep revolutionizes urban waste management by offering a multifaceted solution to longstanding challenges. By empowering communities with a user-friendly reporting system, GreenSweep ensures that waste issues are swiftly addressed. Through dynamic route optimization, resources are allocated efficiently, reducing response times and improving overall cleanliness. Additionally, GreenSweep incentivizes eco-friendly behaviors through a transparent rewards system, motivating individuals to actively participate in creating cleaner and more sustainable cities.
+                            </p>
+                           
+                        </div>
+                 
+                    </div>
+            </section>
+
+            <!-- -------------- PROJECT BOX ---------------- -->
+
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <p class="large rise">Events And Volunteering</p>
+                </div>
+                <div class="project-container">
+                    <ul>
+                        <div class="img-card iCard-style2">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <!-- <span class="card-caption">Image Caption</span> -->
+                                    <img src="ev1.png"/>
+                                </div>
+                                
+                                <span class="card-title">Clean Up (2000 pts)</span>
+                                <!-- <span class="card-title">700 Points</span> -->
+                                
+                                <div class="card-text">
+                                    <p>
+                                        This annual event mobilizes volunteers across the country to participate in various cleanup activities, ranging from litter pickup to recycling drives. National Cleanup Day aims to unite communities in a collective effort to address environmental challenges and promote stewardship of natural resources.                                    </p>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="card-link">
+                                <a href="#" title="Read Full"><span>Register</span></a>
+                            </div>
+                        </div>
+                                         
+                    </ul>
+                    <ul>
+                        <div class="img-card iCard-style2">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <!-- <span class="card-caption">Image Caption</span> -->
+                                    <img src="ev2.png"/>
+                                </div>
+                                
+                                <span class="card-title">Campaign (500 pts)</span>
+                                
+                                <div class="card-text">
+                                    <p>
+                                        Volunteers engage in educational activities and outreach initiatives to promote recycling awareness and encourage recycling behaviors within communities. This event may include distributing informational materials, organizing recycling drives, and conducting recycling workshops.                                    </p>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="card-link">
+                                <a href="#" title="Read Full"><span>Register</span></a>
+                            </div>
+                        </div>                    
+                    </ul>
+                    <ul>
+                        <div class="img-card iCard-style2">
+                            <div class="card-content">
+                                <div class="card-image">
+                                    <!-- <span class="card-caption">Image Caption</span> -->
+                                    <img src="ev3.png"/>
+                                </div>
+                                
+                                <span class="card-title">Waste Audit (800 pts)</span>
+                                
+                                <div class="card-text">
+                                    <p>
+                                        Volunteers assist in conducting waste audits at local businesses, schools, or events to assess waste generation patterns and identify opportunities for waste reduction and recycling. This event may involve sorting and analyzing collected waste to determine its composition and volume.                                    </p>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="card-link">
+                                <a href="#" title="Read Full"><span>Register</span></a>
+                            </div>
+                        </div>                    
+                    </ul>
+                </div>
+            </section>
+
+            
+
+     
+
+
+            <!-- -------------- CONTACT BOX ---------------- -->
+
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <p class="large rise">Report</p>
+                    <span>Do you notice a garbage hazard, add here</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Contact Us <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: john@doe.com</p>
+                            <p><i class="uil uil-phone"></i> Tel: +250 708 770 000</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+
+                                <select class="input-field" id="category" name="category" required>
+                                    <option value="" disabled selected>Select Option</option>
+                                    <option value="Overflowed Dustbins">Overflowed Dustbins- 10</option>
+                                    <option value="Illegal Dumping">Illegal Dumping - 20</option>
+                                    <option value="Need of Dustbins">Need of Dustbins - 15</option>
+                                    <option value="High Garbage">High Garbage - 25</option>
+                                </select>
+
+                                <!-- Add an input field for uploading images -->
+                                <input type="file" class="input-field" id="image" accept="image/*">
+                                <input type="hidden" id="username" name="username" value="sampleUsername">
+                            </div>
+
+                            <div class="text-area">
+                                <textarea placeholder="Description" id="name"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <!-- <button class="btn">Send </button> -->
+                                <button class="btn" type="button" onclick="submitData()">Add Data</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ... existing code ... MAP-->
+            <div class="top-header" >
+                <p class="large rise">Map</p>
+            </div>
+            <section class="section" id="map">
+
+            
+                
+                <div class="map-container">
+                    
+    <div id="map-in" style="height: 500px;"></div>
+                </div>
+            
+            </section>
+
+        </main>
+
+
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>GreenSweep</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon"><i class="uil uil-dribbble"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">GreenSweep</a> - All rights reserved
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="main.js"></script>
+    
+</body>
+
+</html>
